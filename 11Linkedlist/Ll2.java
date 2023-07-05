@@ -1,7 +1,5 @@
-public class Ll1 {
-
-    // Insert at end of a linked list
-    // Defining head
+public class Ll2 {
+    // insertion in ll at begining
     Node head;
 
     class Node {
@@ -14,6 +12,7 @@ public class Ll1 {
         }
     }
 
+    // insertion at end
     public void insertDATA(int newData) {
         Node newNODE = new Node(newData);
 
@@ -34,30 +33,41 @@ public class Ll1 {
         temp.next = newNODE;
         return;
     }
+    // insertion at begining of linked list
+
+    public void insertAtBeginning(int newData) {
+        Node newNode = new Node(newData);
+        newNode.next = head;
+        head = newNode;
+    }
 
     // displaying the linked list
-    void displayNode()
-    {
+    void displayNode() {
         Node current = head;
-        while(current!= null){
-            System.out.print(current.data+" ");
+        while (current != null) {
+            System.out.print(current.data + " ");
             current = current.next;
 
         }
     }
 
-
     public static void main(String[] args) {
-        Ll1 ilist = new Ll1();
+        Ll2 ilist = new Ll2();
 
         ilist.insertDATA(2);
         ilist.insertDATA(4);
         ilist.insertDATA(8);
-        ilist.insertDATA(10);
-        ilist.insertDATA(15);
 
-        System.out.println("Linked List after successful insertion of all the nodes:");
+        System.out.println("Initial linked list at end insertions:");
         ilist.displayNode();
+        System.out.println();
+
+        ilist.insertAtBeginning(12);
+        ilist.insertAtBeginning(122);
+        ilist.insertAtBeginning(133);
+        System.out.println("Linked list after forward insertions:");
+        ilist.displayNode();
+
         System.out.println();
 
     }
