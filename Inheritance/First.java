@@ -1,7 +1,7 @@
 
 
 class Human {
-    private String name;
+    //private String name;
     int work;
 
     // Constructor

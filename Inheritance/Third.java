@@ -1,4 +1,4 @@
-class Isro_Rocket {
+class INDIA {
     public void fueling() {
         System.out.println("Cryo gasses are pumped. ");
     }
@@ -8,7 +8,7 @@ class Isro_Rocket {
     }
 }
 
-class GSLV_MK2 extends Isro_Rocket {
+class GSLV_MK2 extends INDIA {
     public void Liftoff() {
         System.out.println("GSLV LIFTOFF NORMAL. ");
     }
@@ -18,7 +18,7 @@ class GSLV_MK2 extends Isro_Rocket {
     }
 }
 
-class LMV3 extends Isro_Rocket {
+class LMV3 extends INDIA {
     public void Liftoff() {
         System.out.println("LMV LIFTOFF NORMAL . ");
     }
