@@ -1,87 +1,87 @@
-import java.util.*;
+// import java.util.*;
 
-abstract class Shape {
-    float area;
+// abstract class Shape {
+//     float area;
 
-    abstract public void Input();
+//     abstract public void Input();
 
-    abstract public void compute();
+//     abstract public void compute();
 
-    public void Display() {
-        System.out.println("Area is : " + area);
-    }
-}
+//     public void Display() {
+//         System.out.println("Area is : " + area);
+//     }
+// }
 
-class Rectangle extends Shape {
-    float length;
-    float breadth;
+// class Rectangle extends Shape {
+//     float length;
+//     float breadth;
 
-    public void Input() {
-        System.out.println("Calculation of Rectangle area : ");
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Enter the length of the reactangle : ");
-        length = sc.nextFloat();
-        System.out.print("Enter the breadth of the reactangle : ");
-        breadth = sc.nextFloat();
+//     public void Input() {
+//         System.out.println("Calculation of Rectangle area : ");
+//         Scanner sc = new Scanner(System.in);
+//         System.out.print("Enter the length of the reactangle : ");
+//         length = sc.nextFloat();
+//         System.out.print("Enter the breadth of the reactangle : ");
+//         breadth = sc.nextFloat();
 
-    }
+//     }
 
-    public void compute() {
-        area = length * breadth;
-    }
+//     public void compute() {
+//         area = length * breadth;
+//     }
 
-}
+// }
 
-class Square extends Shape {
-    float length;
+// class Square extends Shape {
+//     float length;
 
-    public void Input() {
-        System.out.println("Calculation of Square area : ");
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Enter the length of the Square : ");
-        length = sc.nextFloat();
-    }
+//     public void Input() {
+//         System.out.println("Calculation of Square area : ");
+//         Scanner sc = new Scanner(System.in);
+//         System.out.print("Enter the length of the Square : ");
+//         length = sc.nextFloat();
+//     }
 
-    public void compute() {
-        area = length * length;
-    }
+//     public void compute() {
+//         area = length * length;
+//     }
 
-}
+// }
 
-class Circle extends Shape {
-    float radius;
+// class Circle extends Shape {
+//     float radius;
 
-    public void Input() {
-        System.out.println("Calculation of Circle area : ");
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Enter the raduis of the circle : ");
-        radius = sc.nextFloat();
-    }
+//     public void Input() {
+//         System.out.println("Calculation of Circle area : ");
+//         Scanner sc = new Scanner(System.in);
+//         System.out.print("Enter the raduis of the circle : ");
+//         radius = sc.nextFloat();
+//     }
 
-    public void compute() {
-        area = (float) (radius * (3.14) * radius);
-    }
+//     public void compute() {
+//         area = (float) (radius * (3.14) * radius);
+//     }
 
-}
+// }
 
-class Geometry {
-    public void show(Shape s) {
-        s.Input();
-        s.compute();
-        s.Display();
-    }
-}
+// class Geometry {
+//     public void show(Shape s) {
+//         s.Input();
+//         s.compute();
+//         s.Display();
+//     }
+// }
 
-public class Application {
-    public static void main(String[] args) {
-        Rectangle r = new Rectangle();
-        Square s = new Square();
-        Circle c = new Circle();
+// public class Application {
+//     public static void main(String[] args) {
+//         Rectangle r = new Rectangle();
+//         Square s = new Square();
+//         Circle c = new Circle();
 
-        Geometry g = new Geometry();
-        g.show(r);
-        g.show(s);
-        g.show(c);
+//         Geometry g = new Geometry();
+//         g.show(r);
+//         g.show(s);
+//         g.show(c);
 
-    }
-}
+//     }
+// }
